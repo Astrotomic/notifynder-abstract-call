@@ -13,36 +13,42 @@ class CallMessage
     public function from($originator)
     {
         $this->setOriginator($originator);
+
         return $this;
     }
 
     public function to($recipient)
     {
         $this->setRecipient($recipient);
+
         return $this;
     }
 
     public function text($body)
     {
         $this->setBody($body);
+
         return $this;
     }
 
     public function lang($language)
     {
         $this->setLanguage($language);
+
         return $this;
     }
 
     public function male()
     {
         $this->setGender('male');
+
         return $this;
     }
 
     public function female()
     {
         $this->setGender('female');
+
         return $this;
     }
 

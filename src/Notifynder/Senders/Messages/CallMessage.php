@@ -34,9 +34,15 @@ class CallMessage
         return $this;
     }
 
-    public function gender($gender)
+    public function male()
     {
-        $this->setGender($gender);
+        $this->setGender('male');
+        return $this;
+    }
+
+    public function female()
+    {
+        $this->setGender('female');
         return $this;
     }
 
